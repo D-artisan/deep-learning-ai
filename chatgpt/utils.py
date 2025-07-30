@@ -1,3 +1,15 @@
+def get_products_from_query(user_input):
+    """
+    Returns a string representation of a list of (category, product, price) tuples
+    for products mentioned in user_input.
+    """
+    result = []
+    user_input_lower = user_input.lower()
+    for category, items in products.items():
+        for product in items:
+            if product['name'].lower() in user_input_lower:
+                result.append((category, product['name'], product['price']))
+    return str(result)
 
 import openai
 
