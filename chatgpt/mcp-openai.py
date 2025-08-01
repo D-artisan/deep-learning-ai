@@ -22,4 +22,7 @@ resp = client.responses.create(
     input="What transport protocols are supported in the 2025-03-26 version of the MCP spec?",
 )
 
-print(resp.output_text)
+with open("mcp-openai.md", "w", encoding="utf-8") as f:
+    f.write("# MCP OpenAI Response\n\n")
+    f.write(resp.output_text.strip() + "\n")
+print("Response written to mcp-openai.md")
