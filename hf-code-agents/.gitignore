@@ -2,3 +2,6 @@
 __pycache__/
 *.pyc
 *.pyo
+__pycache__/
+./Lesson2/__pycache__
+./Lesson3/__pycache__
